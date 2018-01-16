@@ -1,10 +1,10 @@
 pylint-django
 =============
 
-[![Build Status](https://travis-ci.org/landscapeio/pylint-django.svg?branch=master)](https://travis-ci.org/landscapeio/pylint-django)
-[![Code Quality](https://landscape.io/github/landscapeio/pylint-django/master/landscape.png)](https://landscape.io/github/landscapeio/pylint-django)
-[![Coverage Status](https://coveralls.io/repos/landscapeio/pylint-django/badge.svg)](https://coveralls.io/r/landscapeio/pylint-django)
-[![Latest Version](https://img.shields.io/pypi/v/pylint-django.svg)](https://pypi.python.org/pypi/pylint-django)
+[![Build Status](https://travis-ci.org/MrSenko/django-pylint.svg?branch=master)](https://travis-ci.org/MrSenko/django-pylint)
+[![Code Quality](https://landscape.io/github/MrSenko/django-pylint/master/landscape.png)](https://landscape.io/github/MrSenko/django-pylint)
+[![Coverage Status](https://coveralls.io/repos/MrSenko/django-pylint/badge.svg)](https://coveralls.io/r/MrSenko/django-pylint)
+[![Latest Version](https://img.shields.io/pypi/v/django-pylint.svg)](https://pypi.python.org/pypi/django-pylint)
 
 # About
 
