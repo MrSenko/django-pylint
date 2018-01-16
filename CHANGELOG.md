@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 0.9.0
+
+* Fork as [django-pylint](https://github.com/MrSenko/django-pylint) as a Django 2 & Python 3 only package
+* Update tests for latest version of pylint (>=1.8)
+* Add testing with Django 2.0.x, Python 3.5 and 3.6
+* Only testing with Django 1.11.x LTS from all previous Django versions
+* Stop testing on Python 2
+
 ## Version 0.7.4
 * [#88](https://github.com/landscapeio/pylint-django/pull/88) Fixed builds with Django 1.10 (thanks to [federicobond](https://github.com/federicobond))
 * [#91](https://github.com/landscapeio/pylint-django/pull/91) Fixed race condition when running with pylint parallel execution mode (thanks to [jeremycarroll](https://github.com/jeremycarroll))

@@ -2,30 +2,22 @@ pylint-django
 =============
 
 [![Build Status](https://travis-ci.org/MrSenko/django-pylint.svg?branch=master)](https://travis-ci.org/MrSenko/django-pylint)
-[![Code Quality](https://landscape.io/github/MrSenko/django-pylint/master/landscape.png)](https://landscape.io/github/MrSenko/django-pylint)
 [![Coverage Status](https://coveralls.io/repos/MrSenko/django-pylint/badge.svg)](https://coveralls.io/r/MrSenko/django-pylint)
-[![Latest Version](https://img.shields.io/pypi/v/django-pylint.svg)](https://pypi.python.org/pypi/django-pylint)
 
 # About
 
-`pylint-django` is a [Pylint](http://pylint.org) plugin for improving code analysis for when analysing code using Django. It is also used by the [Prospector](https://github.com/landscapeio/prospector) tool.
+`django-pylint` is a [Pylint](http://pylint.org) plugin for improving code analysis
+for when analysing code using Django. This package is a currently maintained fork of
+[pylint-django](https://github.com/landscapeio/pylint-django)!
 
 ## Usage
 
 #### Pylint
 
-Ensure `pylint-django` is installed and on your path (`pip install pylint-django`), and then run pylint:
+Ensure `django-pylint` is installed and on your path (`pip install django-pylint`), and then run pylint:
 
 ```
 pylint --load-plugins pylint_django [..other options..]
-```
-
-#### Prospector
-
-If you have `prospector` installed, then `pylint-django` will already be installed as a dependency, and will be activated automatically if Django is detected.
-
-```
-prospector [..other options..]
 ```
 
 # Features
@@ -39,8 +31,7 @@ prospector [..other options..]
 # Contributing
 
 Please feel free to add your name to the `CONTRIBUTORS.md` file if you want to be
-credited when pull requests get merged. You can also add to the `CHANGELOG.md` file
-if you wish, although I'll also do that when merging if not.
+credited when pull requests get merged. You can also add to the `CHANGELOG.md` file.
 
 ## Tests
 
@@ -48,8 +39,8 @@ The structure of the test package follows that from pylint itself.
 
 It is fairly simple: create a module starting with `func_` followed by
 a test name, and insert into it some code. The tests will run pylint
- against these modules. If the idea is that no messages now occur, then
- that is fine, just check to see if it works by running `scripts/test.sh`.
+against these modules. If the idea is that no messages now occur, then
+that is fine, just check to see if it works by running `scripts/test.sh`.
 
 Ideally, add some pylint error suppression messages to the file to prevent
 spurious warnings, since these are all tiny little modules not designed to
@@ -57,11 +48,13 @@ do anything so there's no need to be perfect.
 
 It is possible to make tests with expected error output, for example, if
 adding a new message or simply accepting that pylint is supposed to warn.
-the `messages` directory contains a list of files which should match the
-name of the test and contain error type, line number, class and expected text.
-These are useful to quickly add "expected messages".
+Add a `.txt` file which should match the name of the test and contains
+error type, line number, class and expected text. The test code itself
+should also be annotated with comments on lines which are supposed to
+trigger pylint messages! See `func_model_does_not_use_unicode_py33`
+for example!
 
 
 # License
 
-`pylint-django` is available under the GPLv2 license.
+`django-pylint` is available under the GPLv2 license.
