@@ -1,5 +1,31 @@
 # Changelog
 
+## Version 0.10.0 (17 Jan 2018)
+
+This version merges all pending pull requests from the original upstream
+repository!
+
+* [Upstream #109](http://github.com/landscapeio/pylint-django/pull/109),
+  adding 'urlpatterns', 'register', 'app_name' to good names. Obsoletes
+  [upstream #111](http://github.com/landscapeio/pylint-django/pull/111), fixes
+  [upstream #108](http://github.com/landscapeio/pylint-django/issues/108)
+  (Vinay Pai)
+* Add 'handler500' to good names (Mr. Senko)
+* [Upstream #103](http://github.com/landscapeio/pylint-django/pull/103):
+  Support factory_boy's DjangoModelFactory Meta class (Konstantinos Koukopoulos)
+* [Upstream #100](https://github.com/landscapeio/pylint-django/pull/100):
+  Fix E1101:Instance of '__proxy__' has no 'format' member' when using .format()
+  on a ugettext_lazy translation. Fixes
+  [upstream #80](https://github.com/landscapeio/pylint-django/issues/80) (canarduck)
+* [Upstream #99](https://github.com/landscapeio/pylint-django/pull/99):
+  Add tests and transforms for DurationField, fixes
+  [upstream #95](https://github.com/landscapeio/pylint-django/issues/95) (James M. Allen)
+* [Upstream #92](https://github.com/landscapeio/pylint-django/pull/92):
+  Add json field to WSGIRequest proxy (sjk4sc)
+* [Upstream #84](https://github.com/landscapeio/pylint-django/pull/84):
+  Add support for django.contrib.postgres.fields and UUIDField (Villiers Strauss)
+
+
 ## Version 0.9.0
 
 * Fork as [django-pylint](https://github.com/MrSenko/django-pylint) as a Django 2 & Python 3 only package
