@@ -19,12 +19,10 @@ def register(linter):
     name_checker.config.good_names += ('qs',)
 
     # Default pylint.checkers.base.CONST_NAME_RGX = re.compile('(([A-Z_][A-Z0-9_]*)|(__.*__))$').
-# todo: this has been removed from pylint in
-# https://github.com/PyCQA/pylint/commit/5b72e7f886ee9993025c9564d918de21cbf5acd0
-#    start = name_checker.config.const_rgx.pattern[:-2]
-#    end = name_checker.config.const_rgx.pattern[-2:]
-#    const_rgx = '%s|(urls|urlpatterns|register)%s' % (start, end)
-#    name_checker.config.const_rgx = re.compile(const_rgx)
+    start = name_checker.config.const_rgx.pattern[:-2]
+    end = name_checker.config.const_rgx.pattern[-2:]
+    const_rgx = '%s|(urls|urlpatterns|register)%s' % (start, end)
+    name_checker.config.const_rgx = re.compile(const_rgx)
 
     # we don't care about South migrations
     linter.config.black_list += ('migrations', 'south_migrations')
